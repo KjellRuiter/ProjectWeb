@@ -5,88 +5,107 @@
     <meta charset="UTF-8">
     <title>Overzichtspagina</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header id="top">
+    <header>
         <div>
-            <img src="images/transavialogo.svg" alt="transavialogo">
+            <img src="images/Logo.png" alt="Logo van transavia">
             <nav>
                 <ul>
-                    <li><a href="overzicht.html" class="selected">Home</a></li>
-                    <li><a href="leesbundels.html">Leesbundels</a></li>
+                    <li><a href="index.html" class="selected">Home</a></li>
+                    <li><a href="lijst.html">Lijst</a></li>
                     <li><a href="account.html">Account</a></li>
                 </ul>
             </nav>
-            <img src="images/homeshape.svg" alt="homeicon">
-            <h1>Verhalen met stijl</h1>
         </div>
+        <h1> Verhalen to go </h1>
     </header>
-
-    <div>
-        <section>
-            <h2>lees <br> verder</h2>
-            <a href="08twitter.html">
-                <h3>08. Twitter</h3>
-            </a>
-            <div></div>
-        </section>
-
-        <section>
-            <h2>lees <br> verder</h2>
-            <a href="47haiku.html">
-                <h3>47. Haiku</h3>
-            </a>
-            <div></div>
-        </section>
-
-        <section>
-            <h2>lees <br> verder</h2>
-            <a href="89zombie.html">
-                <h3>89. Zombie</h3>
-            </a>
-            <div></div>
-        </section>
-    </div>
 
     <main>
         <div>
-            <h2>Wat wil je lezen?</h2>
+            <h2>lees verder</h2>
+            <section>
+
+                <a href="">
+                    <h3>17. Iphone</h3>
+                </a>
+            </section>
+
+            <section>
+                <a href="">
+                    <h3>54. Poepen</h3>
+                </a>
+            </section>
+
+            <section>
+                <a href="">
+                    <h3>37. Kater</h3>
+                </a>
+            </section>
+        </div>
+        <div>
+            <h2>Zoeken</h2>
             <form action="zoekverhaal">
-                <input type="text" placeholder="Zoek uw verhaal">
+                <input type="text" placeholder="Zoeken">
             </form>
         </div>
-        <button id="sortfilterbutton">zoek opties</button>
+        <button id="filtersortbtn">zoek</button>
 
         <form action="filterandsort" class="sortfilter">
             <h3>Wat zoek je?</h3>
-            <img id="closebutton" src="images/exitbuttonblue.svg" alt="exitfilterbutton">
+            <img id="exitbtn" src="images/arrow%20next.png" alt="btn om filter/sorteer te sluiten">
             <div>
                 <fieldset>
                     <legend>Sorteer op</legend>
-                    <label> Comments <input name="sort" type="radio"> </label>
-                    <label> Likes <input name="sort" type="radio" checked="checked"> </label>
+                    <label> Likes hoog - laag
+                        <input name="sort" type="radio"> </label>
+                    <label> Likes laag - hoog
+                        <input name="sort" type="radio" checked="checked"> </label>
+                    <label> Leestijd lang - kort
+                        <input name="sort" type="radio"> </label>
+                    <label> Leestijd kort - lang
+                        <input name="sort" type="radio"> </label>
                 </fieldset>
 
                 <fieldset>
                     <legend>Leestijd</legend>
-                    <label> 5 min <input type="checkbox"> </label>
-                    <label> 10 min <input type="checkbox"> </label>
-                    <label> 15 + min <input type="checkbox"> </label>
+                    <label> 5 min
+                        <input type="checkbox"> </label>
+                    <label> 10 min
+                        <input type="checkbox"> </label>
+                    <label> 15 + min
+                        <input type="checkbox"> </label>
                 </fieldset>
                 <fieldset>
-                    <legend>Leesstijl</legend>
-                    <label> Eerste persoon <input type="checkbox"> </label>
-                    <label> Derde persoon <input type="checkbox"> </label>
-                    <label> Beeldend <input type="checkbox"> </label>
+                    <legend>Design</legend>
+                    <label> licht
+                        <input type="checkbox"> </label>
+                    <label> Donker
+                        <input type="checkbox"> </label>
+                    <label> gekleurd
+                        <input type="checkbox"> </label>
                 </fieldset>
                 <fieldset>
-                    <legend>Overig</legend>
-                    <label> Sport <input type="checkbox"> </label>
-                    <label> Bekende namen <input type="checkbox"> </label>
-                    <label> Stemming <input type="checkbox"> </label>
+                    <legend>tags</legend>
+                    <label> #Sport
+                        <input type="checkbox"> </label>
+                    <label> #Bekende namen
+                        <input type="checkbox"> </label>
+                    <label> #boos
+                        <input type="checkbox"> </label>
+                    <label> #verdrietig
+                        <input type="checkbox"> </label>
+                    <label> #blij
+                        <input type="checkbox"> </label>
+                    <label> #verward
+                        <input type="checkbox"> </label>
+                    <label> #verveeld
+                        <input type="checkbox"> </label>
+                    <label> #bang
+                        <input type="checkbox"> </label>
                 </fieldset>
             </div>
             <a href="#articlescroll">Zoeken</a>
@@ -94,35 +113,34 @@
 
         <div id="articlescroll">
             <article>
-                <a href="89zombie.html">
-                    <h3>89. Zombie</h3>
+                <a href="">
+                    <h3>33. Poepen</h3>
                 </a>
                 <footer>
                     <ul>
-                        <li>22</li>
-                        <li>51</li>
-                        <li>15m</li>
+                        <li>25</li>
+                        <li>32</li>
+                        <li>8m</li>
                     </ul>
                 </footer>
-                <img src="images/zombiepreview.png" alt="zombiepreview">
-                <button>mijn lijst</button>
-                <button>download</button>
+                <img src="images/TRS-identity-10.jpg" alt="gewoone foto">
+                <button>Lijst</button>
             </article>
 
             <article>
                 <a href="47haiku.html">
-                    <h3>47. Haiku</h3>
+                    <h3>12. poepen</h3>
                 </a>
                 <footer>
                     <ul>
-                        <li>12</li>
-                        <li>43</li>
-                        <li>5m</li>
+                        <li>65</li>
+                        <li>98</li>
+                        <li>17m</li>
                     </ul>
                 </footer>
-                <img src="images/haikupreview.png" alt="haikupreview">
-                <button>mijn lijst
-            </button>
+                <img src="images/TRS-identity-10.jpg" alt="gewoone foto">
+                <button>Lijst
+                </button>
                 <button>download</button>
             </article>
 
@@ -132,14 +150,13 @@
                 </a>
                 <footer>
                     <ul>
-                        <li>17</li>
-                        <li>39</li>
-                        <li>5m</li>
+                        <li>76</li>
+                        <li>22</li>
+                        <li>6m</li>
                     </ul>
                 </footer>
-                <img src="images/vrijdagde13epreview.jpeg" alt="vrijdagde13epreview">
-                <button>mijn lijst</button>
-                <button>download</button>
+                <img src="images/TRS-identity-10.jpg" alt="gewoone foto">
+                <button>Lijst</button>
             </article>
 
             <article>
@@ -148,14 +165,13 @@
                 </a>
                 <footer>
                     <ul>
-                        <li>11</li>
-                        <li>35</li>
-                        <li>15m</li>
+                        <li>21</li>
+                        <li>55</li>
+                        <li>12m</li>
                     </ul>
                 </footer>
-                <img src="images/twitterpreview.png" alt="twitterpreview">
-                <button>mijn lijst</button>
-                <button>download</button>
+                <img src="images/TRS-identity-10.jpg" alt="gewoone foto">
+                <button>Lijst</button>
             </article>
 
             <article>
@@ -164,14 +180,13 @@
                 </a>
                 <footer>
                     <ul>
-                        <li>24</li>
-                        <li>34</li>
-                        <li>5m</li>
+                        <li>33</li>
+                        <li>82</li>
+                        <li>10m</li>
                     </ul>
                 </footer>
-                <img src="images/steenkolenfranspreview.png" alt="steenkolenfranspreview">
+                <img src="images/TRS-identity-10.jpg" alt="gewoone foto">
                 <button>mijn lijst</button>
-                <button>download</button>
             </article>
 
             <article>
@@ -180,118 +195,18 @@
                 </a>
                 <footer>
                     <ul>
-                        <li>10</li>
-                        <li>30</li>
-                        <li>5m</li>
+                        <li>98</li>
+                        <li>23</li>
+                        <li>12m</li>
                     </ul>
                 </footer>
-                <img src="images/telgrafischpreview.png" alt="telegrafischpreview">
-                <button>mijn lijst</button>
-                <button>download</button>
+                <img src="images/TRS-identity-10.jpg" alt="gewoone foto">
+                <button>Lijst</button>
             </article>
         </div>
 
         <a href="alleverhalen.html">Zie meer verhalen</a>
     </main>
-
-    <section>
-
-        <div>
-
-            <div>
-                <div>
-                    <img src="images/flightwindowanimation.gif" alt="flightwindow">
-                </div>
-                <div>
-                    <h3>Jouw vlucht <br> vertrekt over</h3>
-                    <p id="hms">01:40:00</p>
-                    <a href="verhalenoptijd.html">Bekijk jouw verhalen</a>
-                </div>
-            </div>
-
-            <div>
-                <article>
-                    <a href="99verrassing.html">
-                        <h4>88. Klumperbeven</h4>
-                    </a>
-                    <footer>
-                        <ul>
-                            <li>12</li>
-                            <li>22</li>
-                            <li>10m</li>
-                        </ul>
-                    </footer>
-                </article>
-
-                <article>
-                    <a href="99verrassing.html">
-                        <h4>75. Kinderboek</h4>
-                    </a>
-                    <footer>
-                        <ul>
-                            <li>24</li>
-                            <li>28</li>
-                            <li>5m</li>
-                        </ul>
-                    </footer>
-                </article>
-
-                <article>
-                    <a href="99verrassing.html">
-                        <h4>59. Terugspoelen</h4>
-                    </a>
-                    <footer>
-                        <ul>
-                            <li>5</li>
-                            <li>2</li>
-                            <li>5m</li>
-                        </ul>
-                    </footer>
-                </article>
-            </div>
-
-            <div>
-                <article>
-                    <a href="99verrassing.html">
-                        <h4>53. Proces-verbaal</h4>
-                    </a>
-                    <footer>
-                        <ul>
-                            <li>4</li>
-                            <li>11</li>
-                            <li>10m</li>
-                        </ul>
-                    </footer>
-                </article>
-
-                <article>
-                    <a href="99verrassing.html">
-                        <h4>50. Gefrustreerd</h4>
-                    </a>
-                    <footer>
-                        <ul>
-                            <li>6</li>
-                            <li>33</li>
-                            <li>15m</li>
-                        </ul>
-                    </footer>
-                </article>
-
-                <article>
-                    <a href="99verrassing.html">
-                        <h4>38. Moe</h4>
-                    </a>
-                    <footer>
-                        <ul>
-                            <li>20</li>
-                            <li>23</li>
-                            <li>5m</li>
-                        </ul>
-                    </footer>
-                </article>
-            </div>
-        </div>
-    </section>
 
     <footer>
 
@@ -315,8 +230,6 @@
         </div>
     </footer>
 
-    <script src="js/sortfilter.js"></script>
-    <script src="js/countdown.js"></script>
 
 </body>
 
