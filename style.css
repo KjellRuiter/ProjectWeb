@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "Nexa Bold";
+    src: url(../fonts/Nexa Bold.otf);
+}
+
+@font-face {
+    font-family: "Nexa Light";
+    src: url(../fonts/Nexa Light.otf);
+}
+
+h1, h2, h3, h4 {
+  font-family: "Nexa Bold";  
+}
+
+h1 {
+    font-size: 4em;
+    color: #00D66C;
+}
+
+h2 {
+    font-size: 3.5em; 
+}
+
+h3 {
+    font-size: 1.8em; 
+}
+
+h4 {
+    font-size:  1.2em;
+}
+form p ul li {
+    font-family:"Nexa Ligt";
+}
+:focus + span {
+    color: red;
+}
+
+header {
+    display: flex;
+}
+
+nav ul {
+    text-decoration: none;
+    list-style: none;
+    display: flex;  
+}
+
+
+body {
+    font-size: 1em;
+    color: ;
+    background-color: aquamarine;
+}
+/*
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    display: inline-flex;
+    display: flex;
+}
+
+nav li a {
+    display: block;
+    line-height: 2;
+    text-decoration: none;
+    margin-left: 1em;
+    
+}
+  nav ul li {
+    margin-right: 1em;
+    padding:.5em;
+    border-radius:.25em;
+    box-shadow:0 0 2px rgba(0,0,0,.25);
+    max-height:2em;
+}
+header {
+    display:flex;
+    background-color: white;
+}
+
+header img {
+    width: 8.9em;
+    margin: auto;
+    position: fixed;
+}
+
+*/
+

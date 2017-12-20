@@ -11,223 +11,235 @@
 <body>
 
     <header>
-        <div>
-            <img src="images/Logo.png" alt="Logo van transavia">
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="selected">Home</a></li>
-                    <li><a href="lijst.html">Lijst</a></li>
-                    <li><a href="account.html">Account</a></li>
-                </ul>
-            </nav>
-        </div>
-        <h1> Verhalen to go </h1>
+        <img src="images/transavialogo.svg" alt="Logo van transavia">
+        <h1> Story to go </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lijst.html">Lijst</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <div>
-            <h2>lees verder</h2>
-            <section>
+        <h2>lees verder</h2>
+        <article>
+            <a href="">
+                <h3>17. Iphone</h3>
+            </a>
+        </article>
 
-                <a href="">
-                    <h3>17. Iphone</h3>
-                </a>
-            </section>
+        <article>
+            <a href="">
+                <h3>54. Poepen</h3>
+            </a>
+        </article>
 
-            <section>
-                <a href="">
-                    <h3>54. Poepen</h3>
-                </a>
-            </section>
+        <article>
+            <a href="">
+                <h3>37. Kater</h3>
+            </a>
+        </article>
 
-            <section>
-                <a href="">
-                    <h3>37. Kater</h3>
-                </a>
-            </section>
-        </div>
-        <div>
+        <section>
             <h2>Zoeken</h2>
             <form action="zoekverhaal">
                 <input type="text" placeholder="Zoeken">
+                <button id="filtersortbtn">zoek</button>
             </form>
-        </div>
-        <button id="filtersortbtn">zoek</button>
+        </section>
 
-        <form action="filterandsort" class="sortfilter">
+
+        <form>
             <h3>Wat zoek je?</h3>
             <img id="exitbtn" src="images/arrow%20next.png" alt="btn om filter/sorteer te sluiten">
-            <div>
-                <fieldset>
-                    <legend>Sorteer op</legend>
-                    <label> Likes hoog - laag
-                        <input name="sort" type="radio"> </label>
-                    <label> Likes laag - hoog
-                        <input name="sort" type="radio" checked="checked"> </label>
-                    <label> Leestijd lang - kort
-                        <input name="sort" type="radio"> </label>
-                    <label> Leestijd kort - lang
-                        <input name="sort" type="radio"> </label>
-                </fieldset>
 
-                <fieldset>
-                    <legend>Leestijd</legend>
-                    <label> 5 min
-                        <input type="checkbox"> </label>
-                    <label> 10 min
-                        <input type="checkbox"> </label>
-                    <label> 15 + min
-                        <input type="checkbox"> </label>
-                </fieldset>
-                <fieldset>
-                    <legend>Design</legend>
-                    <label> licht
-                        <input type="checkbox"> </label>
-                    <label> Donker
-                        <input type="checkbox"> </label>
-                    <label> gekleurd
-                        <input type="checkbox"> </label>
-                </fieldset>
-                <fieldset>
-                    <legend>tags</legend>
-                    <label> #Sport
-                        <input type="checkbox"> </label>
-                    <label> #Bekende namen
-                        <input type="checkbox"> </label>
-                    <label> #boos
-                        <input type="checkbox"> </label>
-                    <label> #verdrietig
-                        <input type="checkbox"> </label>
-                    <label> #blij
-                        <input type="checkbox"> </label>
-                    <label> #verward
-                        <input type="checkbox"> </label>
-                    <label> #verveeld
-                        <input type="checkbox"> </label>
-                    <label> #bang
-                        <input type="checkbox"> </label>
-                </fieldset>
-            </div>
-            <a href="#articlescroll">Zoeken</a>
+            <fieldset>
+                <legend>Sorteer op</legend>
+                <label>
+                    <input name="sort" type="radio"> <span>Likes hoog - laag</span>
+                </label>
+                <label>
+                    <input name="sort" type="radio"> <span>Likes laag - hoog</span>
+                </label>
+                <label>
+                    <input name="sort" type="radio"> <span>Leestijd lang - kort</span>
+                </label>
+                <label>
+                    <input name="sort" type="radio"> <span>Leestijd kort - lang</span>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Leestijd</legend>
+                <label>
+                    <input type="checkbox"> <span>5 min</span>
+                </label>
+                <label>
+                    <input type="checkbox"> <span>10 min</span>
+                </label>
+                <label>
+                    <input type="checkbox"> <span> 15+ min</span>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Design</legend>
+                <label>
+                    <input type="checkbox"> <span>licht</span>
+                </label>
+                <label>
+                    <input type="checkbox"> <span>Donker</span>
+                </label>
+                <label>
+                    <input type="checkbox"> <span>gekleurd</span>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>tags</legend>
+                <label>
+                    <input type="checkbox"> <span>#Sport</span>
+                </label>
+                <label>
+                    <input type="checkbox"> <span>#Bekende namen</span>
+                </label>
+                <label>
+                    <input type="checkbox"> <span>#boos</span>
+                </label>
+                <label>
+                    <input type="checkbox"> <span>#verdrietig</span>
+                </label>
+                <label>
+                    <input type="checkbox"> <span>#blij</span>
+                </label>
+                <label>
+                    <input type="checkbox"> <span>#verward</span>
+                </label>
+                <label>
+                    <input type="checkbox"> <span>#verveeld</span>
+                </label>
+                <label>
+                    <input type="checkbox"> <span>#bang</span>
+                </label>
+            </fieldset>
+
+            <a href="">Zoeken</a>
         </form>
 
-        <div id="articlescroll">
-            <article>
-                <a href="">
-                    <h3>33. Poepen</h3>
-                </a>
-                <footer>
-                    <ul>
-                        <li>25</li>
-                        <li>32</li>
-                        <li>8m</li>
-                    </ul>
-                </footer>
-                <img src="images/TRS-identity-10.jpg" alt="gewoone foto">
-                <button>Lijst</button>
-            </article>
 
-            <article>
-                <a href="">
-                    <h3>12. poepen</h3>
-                </a>
-                <footer>
-                    <ul>
-                        <li>65</li>
-                        <li>98</li>
-                        <li>17m</li>
-                    </ul>
-                </footer>
-                <img src="images/TRS-identity-10.jpg" alt="gewoone foto">
-                <button>Lijst
-                </button>
-                <button>download</button>
-            </article>
+        <article>
+            <a href="">
+                <h3>33. Poepen</h3>
+            </a>
+            <footer>
+                <ul>
+                    <li>25</li>
+                    <li>32</li>
+                    <li>8m</li>
+                </ul>
+            </footer>
+            <img src="images/TRS-identity-10.jpg" alt="gewoone foto">
+            <button>Lijst</button>
+        </article>
 
-            <article>
-                <a href="">
-                    <h3>33. Poepen</h3>
-                </a>
-                <footer>
-                    <ul>
-                        <li>76</li>
-                        <li>22</li>
-                        <li>6m</li>
-                    </ul>
-                </footer>
-                <img src="images/TRS-identity-10.jpg" alt="gewoone foto">
-                <button>Lijst</button>
-            </article>
+        <article>
+            <a href="">
+                <h3>12. poepen</h3>
+            </a>
+            <footer>
+                <ul>
+                    <li>65</li>
+                    <li>98</li>
+                    <li>17m</li>
+                </ul>
+            </footer>
+            <img src="images/TRS-identity-10.jpg" alt="gewoone foto">
+            <button>Lijst
+            </button>
+            <button>download</button>
+        </article>
 
-            <article>
-                <a href="">
-                    <h3>33. Poepen</h3>
-                </a>
-                <footer>
-                    <ul>
-                        <li>21</li>
-                        <li>55</li>
-                        <li>12m</li>
-                    </ul>
-                </footer>
-                <img src="images/TRS-identity-10.jpg" alt="gewoone foto">
-                <button>Lijst</button>
-            </article>
+        <article>
+            <a href="">
+                <h3>33. Poepen</h3>
+            </a>
+            <footer>
+                <ul>
+                    <li>76</li>
+                    <li>22</li>
+                    <li>6m</li>
+                </ul>
+            </footer>
+            <img src="images/TRS-identity-10.jpg" alt="gewoone foto">
+            <button>Lijst</button>
+        </article>
 
-            <article>
-                <a href="">
-                    <h3>33. Poepen</h3>
-                </a>
-                <footer>
-                    <ul>
-                        <li>33</li>
-                        <li>82</li>
-                        <li>10m</li>
-                    </ul>
-                </footer>
-                <img src="images/TRS-identity-10.jpg" alt="gewoone foto">
-                <button>mijn lijst</button>
-            </article>
+        <article>
+            <a href="">
+                <h3>33. Poepen</h3>
+            </a>
+            <footer>
+                <ul>
+                    <li>21</li>
+                    <li>55</li>
+                    <li>12m</li>
+                </ul>
+            </footer>
+            <img src="images/TRS-identity-10.jpg" alt="gewoone foto">
+            <button>Lijst</button>
+        </article>
 
-            <article>
-                <a href="">
-                    <h3>33. Poepen</h3>
-                </a>
-                <footer>
-                    <ul>
-                        <li>98</li>
-                        <li>23</li>
-                        <li>12m</li>
-                    </ul>
-                </footer>
-                <img src="images/TRS-identity-10.jpg" alt="gewoone foto">
-                <button>Lijst</button>
-            </article>
-        </div>
+        <article>
+            <a href="">
+                <h3>33. Poepen</h3>
+            </a>
+            <footer>
+                <ul>
+                    <li>33</li>
+                    <li>82</li>
+                    <li>10m</li>
+                </ul>
+            </footer>
+            <img src="images/TRS-identity-10.jpg" alt="gewoone foto">
+            <button>mijn lijst</button>
+        </article>
+
+        <article>
+            <a href="">
+                <h3>33. Poepen</h3>
+            </a>
+            <footer>
+                <ul>
+                    <li>98</li>
+                    <li>23</li>
+                    <li>12m</li>
+                </ul>
+            </footer>
+            <img src="images/TRS-identity-10.jpg" alt="gewoone foto">
+            <button>Lijst</button>
+        </article>
 
         <a href="">Zie meer verhalen</a>
+
     </main>
 
     <footer>
 
         <a href="#top"><img src="images/backtotopbutton.svg" alt="back tot top button"></a>
-        <div>
-            <h3>transavia</h3>
-
-            <ul>
-                <li>
-                    <a href="https://www.transavia.com/nl-NL/service/klantenservice/">Whatsapp</a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/transavia">
+        <h3>transavia</h3>
+        <ul>
+            <li>
+                <a href="https://www.transavia.com/nl-NL/service/klantenservice/">Whatsapp</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/transavia">
                     Youtube
                 </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/transavia">Facebook</a>
-                </li>
-            </ul>
-        </div>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/transavia">Facebook</a>
+            </li>
+        </ul>
     </footer>
 
 
