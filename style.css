@@ -185,7 +185,9 @@ li {
 /* ********************eigen code********************* */
 
 body {
-    margin: 0.2em;
+    margin: 10px;
+    width: 90%;
+    justify-content: center;
 }
 
 header {
@@ -193,11 +195,14 @@ header {
     display: flex;
     background-color: white;
     font-size: 0.7em;
+    margin: auto;
 }
 
 header h1 {
+    font-size: 3em;
+    text-align: center;
     margin: auto;
-    font-size: 3em
+    
 }
 
 header img {
@@ -208,6 +213,7 @@ header img {
 
 header nav ul {
     display: flex;
+    text-align: right;
 }
 
 header nav ul li {
@@ -218,6 +224,7 @@ header nav ul li {
     padding: 0.5em;
     padding-top: 1.3em;
     font-size: 1.3em;
+    
 }
 
 header a {
@@ -228,9 +235,8 @@ header a {
 section:nth-of-type(1) {
     background-color: #F3E5D8;
     margin: auto;
-    display: block;
-    position: relative;
-    padding: 1em;
+    padding: 2em;
+    width: 100%;
 }
 
 section:nth-of-type(3) {
@@ -239,21 +245,17 @@ section:nth-of-type(3) {
     display: block;
     position: relative;
     padding: 1em;
+    
 }
 
 article {
-    width: 25em;
     position: relative;
-    margin-top: 1rem;
-    border-radius: .75rem;
-    color: white;
-    background-color: #00D66C;
-    display: block;
-    position: relative;
+    text-align: left;
     display: inline-block;
-    margin: 1em;
-    width: 18em;
-    padding: 2em;
+    border-radius: 0.4em;
+    background-color: #fff;
+    vertical-align: top;
+    padding: .5em;
 }
 
 article:hover {
@@ -281,6 +283,7 @@ section:nth-of-type(1) {
     grid-column-gap: 6em;
     justify-content: center;
     flex-wrap: wrap;
+    position: relative;
 }
 
 section:nth-of-type(3) {
