@@ -1,3 +1,56 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+    
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ******************** eigen code font ********************* */
+
 @font-face {
     font-family: "Nexa Bold";
     src: url(../fonts/Nexa Bold.otf);
@@ -13,7 +66,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 3em;
     color: #00D66C;
 }
 
@@ -29,62 +82,85 @@ h4 {
     font-size:  1.2em;
 }
 form p ul li {
-    font-family:"Nexa Ligt";
-}
-:focus + span {
-    color: red;
+    font-family: "Nexa Bold" ;
 }
 
-header {
-    display: flex;
+li {
+    font-family: "Nexa Bold" ;
 }
 
-nav ul {
-    text-decoration: none;
-    list-style: none;
-    display: flex;  
-}
-
+/* ********************eigen code********************* */
 
 body {
-    font-size: 1em;
-    color: ;
-    background-color: aquamarine;
-}
-/*
-nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    position: relative;
-    display: inline-flex;
-    display: flex;
+    margin: 0.2em;
 }
 
-nav li a {
-    display: block;
-    line-height: 2;
-    text-decoration: none;
-    margin-left: 1em;
+header {
+    display: inline-block;
+    display: flex;
+    background-color: white;
+    font-size: 0.7em;
     
 }
-  nav ul li {
-    margin-right: 1em;
-    padding:.5em;
-    border-radius:.25em;
-    box-shadow:0 0 2px rgba(0,0,0,.25);
-    max-height:2em;
-}
-header {
-    display:flex;
-    background-color: white;
-}
 
-header img {
-    width: 8.9em;
+header h1 {
     margin: auto;
-    position: fixed;
+}
+header img {
+    width: 8em;
+    height: 100%;
+    position: relative;   
 }
 
-*/
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    width: auto;
+    padding: 0.5em;
+    padding-top: 1.3em;
+    font-size: 1.3em;
+}
+
+header a {
+    text-decoration: none;
+    color: #00D66C;
+}
+
+section {
+    background-color: #F3E5D8;
+    margin: auto;
+    display: block;
+    position: relative;
+}
+
+article {
+    width: 25em; 
+    position: relative;
+    margin-top: 1rem;
+    border-radius: .75rem;
+    color: white;
+    background-color: #00D66C;
+    display: block;
+    position: relative;
+    display: inline-block;
+    
+    
+}
+main {
+    position: relative;
+    display: block;
+}
+main article img {
+    width: 100%;
+}
+
+/* ******************** Responsive ********************* */
+
+
+
 
