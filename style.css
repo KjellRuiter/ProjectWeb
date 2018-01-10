@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+    /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -185,9 +185,10 @@ li {
 /* ********************eigen code********************* */
 
 body {
-    margin: 10px;
     width: 90%;
     justify-content: center;
+    display: block;
+    margin:0 auto;
 }
 
 header {
@@ -195,20 +196,21 @@ header {
     display: flex;
     background-color: white;
     font-size: 0.7em;
-    margin: auto;
+    justify-content: space-between;
+
 }
 
 header h1 {
     font-size: 3em;
-    text-align: center;
-    margin: auto;
-    
+     margin-top: .3em;
 }
 
 header img {
     width: 8em;
     height: 100%;
     position: relative;
+    margin-right: 4.5em;
+    padding-top: .3em;
 }
 
 header nav ul {
@@ -221,10 +223,9 @@ header nav ul li {
     justify-content: space-around;
     text-decoration: none;
     width: auto;
-    padding: 0.5em;
-    padding-top: 1.3em;
+    padding: 0.3em;
+    margin-top: 1.3em;
     font-size: 1.3em;
-    
 }
 
 header a {
@@ -232,22 +233,14 @@ header a {
     color: #00D66C;
 }
 
-section:nth-of-type(1) {
-    background-color: #F3E5D8;
-    margin: auto;
-    padding: 2em;
-    width: 100%;
-}
-
-section:nth-of-type(3) {
+main > section:nth-of-type(1),
+main > section:last-child {
     background-color: #F3E5D8;
     margin: auto;
     display: block;
     position: relative;
-    padding: 1em;
-    
+    padding: 3em;   
 }
-
 article {
     position: relative;
     text-align: left;
@@ -265,8 +258,6 @@ article:hover {
 main {
     position: relative;
     display: block;
-    margin: 1em;
-    width: 100%
 }
 
 main article img {
@@ -276,35 +267,21 @@ main article img {
 
 /* ******************** grid en flow ********************* */
 
-section:nth-of-type(1) {
+main > section:nth-of-type(1),
+main > section:last-child {
     display: grid;
-    align-items: flex-start;
     grid-template-columns: 20em 20em 20em;
-    grid-column-gap: 6em;
+    grid-column-gap: 3em;
+    grid-row-gap: 3em;
     justify-content: center;
-    flex-wrap: wrap;
-    position: relative;
-}
-
-section:nth-of-type(3) {
-    display: grid;
-    align-items: flex-start;
-    grid-template-columns: 20em 20em 20em;
-    grid-row-gap: 2em;
-    grid-column-gap: 6em;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
 
 /* ******************** 1e brake ********************* */
 
 @media only screen and (max-width: 87em) {
-    section:nth-of-type(1) {
-        grid-template-columns: 20em 20em;
-        justify-content: center;
-    }
-    section:nth-of-type(3) {
+    main > section:nth-of-type(1),
+main > section:last-child {
         grid-template-columns: 20em 20em;
         justify-content: center;
     }
@@ -314,11 +291,8 @@ section:nth-of-type(3) {
 /* ******************** 2e brake ********************* */
 
 @media only screen and (max-width: 61em) {
-    section:nth-of-type(1) {
-        grid-template-columns: 20em;
-        justify-content: center;
-    }
-    section:nth-of-type(3) {
+    main > section:nth-of-type(1),
+main > section:last-child {
         grid-template-columns: 20em;
         justify-content: center;
     }
@@ -328,29 +302,23 @@ section:nth-of-type(3) {
 /* ******************** 3e brake ********************* */
 
 @media only screen and (max-width: 34.6em) {
-    section:nth-of-type(1) {
+    main > section:nth-of-type(1),
+main > section:last-child {
         grid-template-columns: 20em;
         justify-content: center;
     }
-    
     header h1 {
         margin: auto;
-        font-size: 2em
+        font-size: 2em;
+        padding-top: .6em
     }
-    
     header nav ul li {
-    display: flex;
-    justify-content: space-around;
-    text-decoration: none;
-    width: auto;
-    padding: 0.5em;
-    padding-top: 1.3em;
-    font-size: 1em;
-    justify-content: flex-end;
-        
-}
-    section:nth-of-type(3) {
-        grid-template-columns: 20em;
-        justify-content: center;
+        display: flex;
+        justify-content: space-around;
+        text-decoration: none;
+        width: auto;
+        padding: 0.5em;
+        padding-top: 1.3em;
+        font-size: 1em;
+        justify-content: flex-end;
     }
-}
