@@ -162,7 +162,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3.5em;
+    font-size: 2.5em;
 }
 
 h3 {
@@ -197,6 +197,7 @@ header {
 
 header h1 {
     margin: auto;
+    font-size: 3em
 }
 
 header img {
@@ -231,6 +232,7 @@ section:nth-of-type(1) {
     position: relative;
     padding: 1em;
 }
+
 section:nth-of-type(3) {
     background-color: #F3E5D8;
     margin: auto;
@@ -251,7 +253,7 @@ article {
     display: inline-block;
     margin: 1em;
     width: 18em;
-    padding:2em;
+    padding: 2em;
 }
 
 article:hover {
@@ -275,7 +277,7 @@ main article img {
 section:nth-of-type(1) {
     display: grid;
     align-items: flex-start;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 20em 20em 20em;
     grid-column-gap: 6em;
     justify-content: center;
     flex-wrap: wrap;
@@ -284,46 +286,68 @@ section:nth-of-type(1) {
 section:nth-of-type(3) {
     display: grid;
     align-items: flex-start;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 20em 20em 20em;
     grid-row-gap: 2em;
     grid-column-gap: 6em;
     justify-content: center;
     flex-wrap: wrap;
 }
 
+
 /* ******************** 1e brake ********************* */
 
 @media only screen and (max-width: 87em) {
-        section:nth-of-type(1) {
-            grid-template-columns: 1fr 1fr;
-            justify-content: center;
-        }
-    section:nth-of-type(3) {
-            grid-template-columns: 1fr 1fr;
+    section:nth-of-type(1) {
+        grid-template-columns: 20em 20em;
         justify-content: center;
-        }
     }
-/* ******************** 2e brake ********************* */
-@media only screen and (max-width: 61em) {
-        section:nth-of-type(1) {
-            grid-template-columns: 1fr;
-            justify-content: center;
-        }
     section:nth-of-type(3) {
-            grid-template-columns: 1fr;
+        grid-template-columns: 20em 20em;
         justify-content: center;
-        }
     }
+}
+
 
 /* ******************** 2e brake ********************* */
+
+@media only screen and (max-width: 61em) {
+    section:nth-of-type(1) {
+        grid-template-columns: 20em;
+        justify-content: center;
+    }
+    section:nth-of-type(3) {
+        grid-template-columns: 20em;
+        justify-content: center;
+    }
+}
+
+
+/* ******************** 3e brake ********************* */
 
 @media only screen and (max-width: 34.6em) {
-        section:nth-of-type(1) {
-            grid-template-columns: 1fr;
-            justify-content: center;
-        }
-    section:nth-of-type(3) {
-            grid-template-columns: 1fr;
+    section:nth-of-type(1) {
+        grid-template-columns: 20em;
         justify-content: center;
-        }
     }
+    
+    header h1 {
+        margin: auto;
+        font-size: 2em
+    }
+    
+    header nav ul li {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    width: auto;
+    padding: 0.5em;
+    padding-top: 1.3em;
+    font-size: 1em;
+    justify-content: flex-end;
+        
+}
+    section:nth-of-type(3) {
+        grid-template-columns: 20em;
+        justify-content: center;
+    }
+}
