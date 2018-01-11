@@ -161,11 +161,11 @@ License: none (public domain)
     }
     
     h2 {
+        padding-bottom: .1em;
         padding-left: .5em;
         padding-top: .5em;
         font-size: 2.5em;
         color: #2800a0;
-
     }
     
     h3 {
@@ -183,12 +183,11 @@ License: none (public domain)
     li {
         font-family: "Nexa Bold";
         color: #2800a0;
-
     }
     /* ********************eigen code********************* */
     
     body {
-        width: 90%;
+        width: 100%;
         justify-content: center;
         margin: 0 auto;
     }
@@ -275,10 +274,41 @@ License: none (public domain)
     a {
         text-decoration: none;
         color: #00D66C;
-}
-footer ul li:before {
-    background-image: ;
-}
+    }
+    
+    footer ul li:before {
+        background-image: ;
+    }
+    
+    footer:last-child {
+        position: relative;
+        width: 100%;
+    }
+    
+    footer button {
+        background-color: #00D66C;
+    }
+footer button:first-child {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+        background-color: #00D66C;
+    margin-top: 2em;
+    }
+footer button:last-child {
+    display: block;
+    margin-right: auto;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    }
+    
+    footer button a img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 4em;
+        transform: rotate(270deg);
+    }
     /* ******************** grid en flow ********************* */
     
     main > section:nth-of-type(1),
