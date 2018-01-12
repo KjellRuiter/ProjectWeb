@@ -189,10 +189,6 @@ License: none (public domain)
         font-family: "Nexa Bold";
         color: #2800a0;
     }
-    
-    article footer ul li:first-letter {
-        font-family: "transico";
-    }
     /* ********************eigen code********************* */
     
     body {
@@ -243,87 +239,9 @@ License: none (public domain)
         color: #00D66C;
     }
     
-    header ul li:first-child {
+    header ul li:last-child {
         text-decoration: underline;
         text-decoration-style: solid;
-    }
-    
-    main > section:nth-of-type(1),
-    main > section:last-child {
-        background-color: #F3E5D8;
-        margin: auto;
-        display: block;
-        position: relative;
-        padding: 3em;
-    }
-    
-    main > section:nth-of-type(1) {
-        background-image: url(images/Backgroundimg.jpg);
-        background-size: cover;
-    }
-    
-    article {
-        position: relative;
-        text-align: left;
-        display: inline-block;
-        border-radius: 0.4em;
-        background-color: #fff;
-        vertical-align: top;
-        padding: .5em;
-        padding-bottom: 3em;
-    }
-    
-    article:hover {
-        transform: scale(1.1);
-    }
-    
-    main {
-        position: relative;
-        display: block;
-    }
-    
-    main article img {
-        width: 100%;
-        height: 0 auto;
-    }
-    
-    a {
-        text-decoration: none;
-        color: #00D66C;
-    }
-    
-    footer button {
-        background-color: #00D66C;
-    }
-    
-    footer button:first-child {
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: #00D66C;
-        margin-top: 1em;
-        margin-bottom: 1em;
-    }
-    
-    footer button a img {
-        ;
-        width: 4em;
-        transform: rotate(270deg);
-    }
-    
-    section article ul li {
-        display: inline-block;
-        margin
-    }
-    
-    section article ul {
-        margin-top: .5em;
-        margin-bottom: .2em;
-    }
-    
-    main section article section {
-        position: absolute;
-        bottom: .5em;
     }
     /* ******************** footer ********************* */
     
@@ -337,33 +255,56 @@ License: none (public domain)
         float: right;
         padding-right: .5em;
     }
-    /* ******************** grid en flow ********************* */
+    /* ******************** form ********************* */
     
-    main > section:nth-of-type(1),
-    main > section:last-child {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 3em;
-        grid-row-gap: 3em;
-        justify-content: center;
+    main > form {
+        border: .0625rem solid;
+        border-color: #2800a0;
+        background-color: white;
+        border-radius: .75em;
+        color: #2800a0;
+        font-size: 1.2em;
+        max-width: 50em;
+        margin-left: 2.5em;
+        margin-right: 2.5em;
     }
-    /* ******************** 1e brake ********************* */
     
-    @media only screen and (max-width: 64em) {
-        main > section:nth-of-type(1),
-        main > section:last-child {
-            grid-template-columns: 1fr 1fr;
-            justify-content: center;
-        }
+    main form fieldset {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding-bottom: 1em;
     }
-    /* ******************** 2e brake ********************* */
+    
+    main form fieldset legend {
+        padding-bottom: .2em;
+        font-size: 1.3em;
+        font-weight: bolder;
+    }
+    
+    button {
+        background-color: #ff3268;
+        box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+        margin: .2em;
+        padding: .4375em 1.5em .5625em;
+        position: relative;
+        border: 0;
+        font-weight: bold;
+        line-height: 1.5;
+        cursor: pointer;
+        display: inline-block;
+        text-decoration: none;
+        border-radius: 1.25em;
+        color: white;
+    }
+    
+    button:hover {
+        transform: scale(1.1);
+    }
+
+      /* ******************** 2e brake ********************* */
     
     @media only screen and (max-width: 44em) {
-        main > section:nth-of-type(1),
-        main > section:last-child {
-            grid-template-columns: 1fr;
-            justify-content: center;
-        }
         header h1 {
             margin: auto;
             font-size: 2em;
@@ -379,11 +320,6 @@ License: none (public domain)
     /* ******************** 3e brake ********************* */
     
     @media only screen and (max-width: 25em) {
-        main > section:nth-of-type(1),
-        main > section:last-child {
-            grid-template-columns: 1fr;
-            justify-content: center;
-        }
         header h1 {
             margin: auto;
             font-size: 1.9em;
@@ -404,112 +340,4 @@ License: none (public domain)
             justify-content: flex-end;
         }
     }
-    /* ******************** form ********************* */
-    
-    main > section > form >input {}
-    
-    main > section > form {
-        margin-left: 1em;
-    }
-    
-    main > form > button:last-child {
-        margin-left: 3.2em;
-        margin-bottom: 2em;
-        margin-top: auto;
-    }
-    
-    form h3 {
-        border-top-right-radius: .75rem;
-        border-top-left-radius: .75rem;
-        color: white;
-        background-color: #2800a0;
-        padding-bottom: 1em;
-        padding: 1em;
-        margin-bottom: 1em
-    }
-    
-    main > form {
-        border: .0625rem solid;
-        border-color: #2800a0;
-        background-color: white;
-        border-radius: .75em;
-        color: #2800a0;
-        font-size: 1.2em;
-        max-width: 50em;
-        margin-left: 2.5em;
-        margin-right: 2.5em;
-    }
-    
-    main > form > div {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-content: center;
-        grid-column-gap: 3em;
-        padding: 0em 2em 0em;
-    }
-    
-    @media only screen and (max-width: 60em) {
-        main > form >div {
-            grid-template-columns: 1fr 1fr;
-        }
-    }
-    
-    @media only screen and (max-width: 42em) {
-        main > form >div {
-            grid-template-columns: 1fr;
-        }
-    }
-    
-    @media only screen and (max-width: 25em) {
-        main > form >div {
-            font-size: .97em;
-        }
-    }
-    
-    main form fieldset {
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        padding-bottom: 1em;
-    }
-    
-    main form fieldset label {
-        padding-bottom: .2em;
-    }
-    
-    main form fieldset legend {
-        padding-bottom: .2em;
-        font-size: 1.3em;
-        font-weight: bolder;
-    }
-    
-    section > Form {
-        display: flex;
-        padding: 1em 2em;
-    }
-    
-    button {
-        background-color: #ff3268;
-        box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
-        margin: .2em;
-        padding: .4375em 1.5em .5625em;
-        position: relative;
-        border: 0;
-        font-weight: bold;
-        line-height: 1.5;
-        cursor: pointer;
-        display: inline-block;
-        text-decoration: none;
-        border-radius: 1.25em;
-        color: white;
-    }
-    
-    form a {
-        color: white;
-        font-weight: bold;
-    }
-    
-    button:hover {
-        transform: scale(1.1);
-    }
-    /* ******************** form ********************* */
+/* ******************** 3e brake ********************* */

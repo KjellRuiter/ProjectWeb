@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-      <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <title>account</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="account.css">
 </head>
+
 <body>
-    
+   <header>
+        <img src="images/Logooooooooo.png" alt="Logo van transavia">
+        <h1> Story to go </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lijst.html">Lijst</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="http://www.ns.nl">
+            <fieldset>
+                <legend>Personalia</legend>
+                <label for="name">Voornaam</label>
+                <input id="name" required>
+                <label for="surname">Achternaam</label>
+                <input id="surname" required>
+                <p class="feedback">Dit gedeelte van het formulier is goed ingevuld.</p>
+            </fieldset>
+            <fieldset>
+                <legend>Online</legend>
+                <label for="url">Website url</label>
+                <input id="url" type="url" placeholder="http://" required>
+                <p class="tooltip">http://</p>
+                <label for="mail">E-mail</label>
+                <input id="mail" type="email" required>
+                <p class="feedback">Dit gedeelte van het formulier is goed ingevuld.</p>
+            </fieldset>
+            <button>Verstuur</button>
+        </form>
+    </main>
+    <footer>
+        <ul>
+            <li>&#xe667;</li>
+            <li>&#xe668;</li>
+            <li>&#xe669;</li>
+            <li>&#xe666;</li>
+        </ul>
+    </footer>
 </body>
+
 </html>

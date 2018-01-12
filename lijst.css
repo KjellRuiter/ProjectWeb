@@ -1,0 +1,318 @@
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+    
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    citecode,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+        display: block;
+    }
+    
+    body {
+        line-height: 1;
+    }
+    
+    ol,
+    ul {
+        list-style: none;
+    }
+    
+    blockquote,
+    q {
+        quotes: none;
+    }
+    
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+        content: '';
+        content: none;
+    }
+    
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    /* ******************** eigen code font ********************* */
+    
+    @font-face {
+        font-family: "Nexa Bold";
+        src: url(../fonts/Nexa Bold.otf);
+    }
+    
+    @font-face {
+        font-family: "Nexa Light";
+        src: url(../fonts/Nexa Light.otf);
+    }
+    
+    @font-face {
+        font-family: "transico";
+        src: url(../fonts/transavicon.woff);
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: "Nexa Bold";
+    }
+    
+    form {
+        font-family: "Nexa Light";
+    }
+    
+    h1 {
+        font-size: 3em;
+        color: #00D66C;
+    }
+    
+    h2 {
+        padding-bottom: .1em;
+        padding-left: .5em;
+        padding-top: .5em;
+        font-size: 2.5em;
+        color: #2800a0;
+    }
+    
+    h3 {
+        font-size: 1.8em;
+    }
+    
+    h4 {
+        font-size: 1.2em;
+    }
+    
+    form p ul li {
+        font-family: "Nexa Bold";
+    }
+    
+    li {
+        font-family: "Nexa Bold";
+        color: #2800a0;
+    }
+    
+    article footer ul li:first-letter {
+        font-family: "transico";
+    }
+    /* ********************eigen code********************* */
+    
+    body {
+        width: 100%;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+    header {
+        display: inline-block;
+        display: flex;
+        background-color: white;
+        font-size: 0.7em;
+        justify-content: space-between;
+        box-shadow: 0 0.3125em 0.625em 0 rgba(0, 0, 0, .15);
+    }
+    
+    header h1 {
+        font-size: 3em;
+        margin-top: .3em;
+    }
+    
+    header img {
+        width: 8em;
+        height: 100%;
+        position: relative;
+        margin-right: 4.5em;
+        padding-top: .3em;
+    }
+    
+    header nav ul {
+        display: flex;
+        text-align: right;
+    }
+    
+    header nav ul li {
+        display: flex;
+        justify-content: space-around;
+        text-decoration: none;
+        width: auto;
+        padding: 0.3em;
+        margin-top: 1.3em;
+        font-size: 1.3em;
+    }
+    
+    header a {
+        text-decoration: none;
+        color: #00D66C;
+}
+
+   header ul li:nth-child(2) {
+text-decoration: underline;
+       text-decoration-style: solid;
+}
+    /* ******************** 2e brake ********************* */
+    
+    @media only screen and (max-width: 44em) {
+        header h1 {
+            margin: auto;
+            font-size: 2em;
+            padding-top: .3em
+        }
+    }
+    
+    @media only screen and (max-width: 31em) {
+        header img {
+            margin-right: -3em;
+        }
+    }
+    /* ******************** 3e brake ********************* */
+    
+    @media only screen and (max-width: 25em) {
+        header h1 {
+            margin: auto;
+            font-size: 1.9em;
+            padding-top: .6em
+        }
+        header img {
+            margin-right: -3em;
+            padding-left: -3em;
+        }
+        header nav ul li {
+            display: flex;
+            justify-content: space-around;
+            text-decoration: none;
+            width: auto;
+            padding: 0.5em;
+            padding-top: 1.3em;
+            font-size: 1em;
+            justify-content: flex-end;
+        }
+    }
+/* ******************** 3e brake ********************* */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
