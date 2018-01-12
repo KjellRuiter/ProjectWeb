@@ -195,6 +195,9 @@ License: none (public domain)
         width: 100%;
         justify-content: center;
         margin: 0 auto;
+        background-image: url(images/Backgroundimg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     
     header {
@@ -258,21 +261,22 @@ License: none (public domain)
     /* ******************** form ********************* */
     
     main > form {
+        background-color: rgba(255,255,255,.7);
         border: .0625rem solid;
         border-color: #2800a0;
-        background-color: white;
         border-radius: .75em;
         color: #2800a0;
         font-size: 1.2em;
         max-width: 50em;
-        margin-left: 2.5em;
-        margin-right: 2.5em;
+        margin: 2.5em;
+        padding: 1em;
     }
     
     main form fieldset {
         display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
+       flex-direction: column;
+        justify-content: center;
+        transition:all .2s;
         padding-bottom: 1em;
     }
     
@@ -281,7 +285,17 @@ License: none (public domain)
         font-size: 1.3em;
         font-weight: bolder;
     }
-    
+input {
+    width: 100%;
+    margin-bottom: .7em;
+    display: block;
+    border: .0625rem solid #91a3b7;
+    color: #606060;
+    font-size: 1rem;
+    border-radius: .5rem;
+    transition: border .2s linear,color .2s linear;
+    text-overflow: ellipsis;
+}
     button {
         background-color: #ff3268;
         box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
