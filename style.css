@@ -103,7 +103,7 @@ License: none (public domain)
     menu,
     nav,
     section {
-        display: flex;
+        display: block;
     }
     
     body {
@@ -278,6 +278,7 @@ License: none (public domain)
     
     main article img {
         width: 100%;
+        height:0 auto;
     }
     
     a {
@@ -285,38 +286,21 @@ License: none (public domain)
         color: #00D66C;
     }
     
-    footer ul li:before {
-        background-image: ;
-    }
-    
-    footer:last-child {
-        position: relative;
-        width: 100%;
-    }
-    
     footer button {
         background-color: #00D66C;
     }
     
     footer button:first-child {
-        display: block;
+        display: flex;
         margin-left: auto;
         margin-right: auto;
         background-color: #00D66C;
-        margin-top: 2em;
-    }
-    
-    footer button:last-child {
-        display: block;
-        margin-right: auto;
+        margin-top: 1em;
         margin-bottom: 1em;
-        margin-left: 1em;
     }
     
     footer button a img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        ;
         width: 4em;
         transform: rotate(270deg);
     }
@@ -331,8 +315,22 @@ License: none (public domain)
         margin-bottom: .2em;
     }
     
+    section article button {
+        display: inline-block;
+        
+}
+    /* ******************** footer ********************* */
     
-    section article button {}
+    body > footer > ul > li {
+        font-family: "transico";
+        display: inline-block;
+        font-size: 1.5em;
+    }
+    
+    body > footer > ul {
+        float: right;
+        padding-right: .5em;
+    }
     /* ******************** grid en flow ********************* */
     
     main > section:nth-of-type(1),
@@ -402,19 +400,36 @@ License: none (public domain)
     }
     /* ******************** form ********************* */
     
-    form h3 {
-        padding-bottom: 1em;
-        width: 100%;
-    }
+main > section > form {
+    margin-left: 1em;
+}
+main > section > form >input {
     
-    main > form {
-        padding: 1em;
-        margin: 1em;
-        background-color: #2800a0;
-        border-radius: .75em;
+}
+
+main > form > button:last-child {
+    margin-left: 3.2em;
+    margin-bottom: 2em;
+}
+form h3 {
+    border-top-right-radius: .75rem;
+    border-top-left-radius: .75rem;
         color: white;
+        background-color: #2800a0;
+        padding-bottom: 1em;
+        padding: 1em;
+        margin-bottom: 1em  
+    }
+    main > form {
+        border:.0625rem solid ;
+        border-color:#2800a0; 
+        background-color: white;
+        border-radius: .75em;
+        color: #2800a0;
         font-size: 1.2em;
         max-width: 50em;
+        margin-left: 2.5em;
+        margin-right: 4em;
     }
     
     main > form > div {
@@ -489,4 +504,15 @@ License: none (public domain)
     button:hover {
         transform: scale(1.1);
     }
+
     /* ******************** form ********************* */
+
+
+
+
+
+
+
+
+
+
