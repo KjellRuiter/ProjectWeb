@@ -265,6 +265,7 @@ License: none (public domain)
         background-color: #fff;
         vertical-align: top;
         padding: .5em;
+        padding-bottom: 3em;
     }
     
     article:hover {
@@ -278,7 +279,7 @@ License: none (public domain)
     
     main article img {
         width: 100%;
-        height:0 auto;
+        height: 0 auto;
     }
     
     a {
@@ -315,10 +316,11 @@ License: none (public domain)
         margin-bottom: .2em;
     }
     
-    section article button {
-        display: inline-block;
-        
-}
+    main section article section {
+        position: absolute;
+        bottom: .5em;
+    }
+
     /* ******************** footer ********************* */
     
     body > footer > ul > li {
@@ -400,29 +402,31 @@ License: none (public domain)
     }
     /* ******************** form ********************* */
     
-main > section > form {
-    margin-left: 1em;
-}
-main > section > form >input {
+    main > section > form >input {}
     
-}
-
-main > form > button:last-child {
-    margin-left: 3.2em;
-    margin-bottom: 2em;
-}
-form h3 {
-    border-top-right-radius: .75rem;
-    border-top-left-radius: .75rem;
+    main > section > form {
+        margin-left: 1em;
+    }
+    
+    main > form > button:last-child {
+        margin-left: 3.2em;
+        margin-bottom: 2em;
+        margin-top: auto;
+    }
+    
+    form h3 {
+        border-top-right-radius: .75rem;
+        border-top-left-radius: .75rem;
         color: white;
         background-color: #2800a0;
         padding-bottom: 1em;
         padding: 1em;
-        margin-bottom: 1em  
+        margin-bottom: 1em
     }
+    
     main > form {
-        border:.0625rem solid ;
-        border-color:#2800a0; 
+        border: .0625rem solid;
+        border-color: #2800a0;
         background-color: white;
         border-radius: .75em;
         color: #2800a0;
@@ -504,15 +508,4 @@ form h3 {
     button:hover {
         transform: scale(1.1);
     }
-
     /* ******************** form ********************* */
-
-
-
-
-
-
-
-
-
-
