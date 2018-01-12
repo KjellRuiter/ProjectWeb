@@ -382,7 +382,7 @@ License: none (public domain)
         }
         header h1 {
             margin: auto;
-            font-size: 1em;
+            font-size: 1.9em;
             padding-top: .6em
         }
         header img {
@@ -433,7 +433,7 @@ License: none (public domain)
         font-size: 1.2em;
         max-width: 50em;
         margin-left: 2.5em;
-        margin-right: 4em;
+        margin-right: 2.5em;
     }
     
     main > form > div {
