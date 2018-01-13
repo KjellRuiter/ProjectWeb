@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="account.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/Logooooooooo.png" alt="Logo van transavia">
+        <h1> Story to go </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lijst.html">Lijst</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="index.html">
+            <fieldset>
+                <legend>Personalia</legend>
+                <label for="name">Voornaam</label>
+                <input id="name" required>
+                <label for="surname">Achternaam</label>
+                <input id="surname" required>
+                <p class="feedback">Dit deel is goed ingevuld.</p>
+            </fieldset>
+            <fieldset>
+                <legend>Online</legend>
+                <label for="username">Gebruikersnaam</label>
+                <input id="username" type="name" minLength="8" required>
+                <label for="mail">E-mail</label>
+                <input id="mail" type="email" required>
+                <label for="password">Wachtwoord</label>
+                <input id="password" type="password" minLength="8" required>
+                <p class="feedback">Dit deel is goed ingevuld.</p>
+            </fieldset>
+            <button>Verstuur</button>
+        </form>
+    </main>
+</body>
+
+</html>
