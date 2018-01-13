@@ -544,7 +544,7 @@ License: none (public domain)
         font-size: 1.3em;
         font-weight: bolder;
     }
-input {
+body.account input {
     width: 100%;
     margin-bottom: .7em;
     display: block;
@@ -555,7 +555,7 @@ input {
     transition: border .2s linear,color .2s linear;
     text-overflow: ellipsis;
 }
-    button {
+ button {
         background-color: #ff3268;
         box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
         margin: .2em;
@@ -571,22 +571,22 @@ input {
         color: white;
     }
 
-fieldset:invalid p {
+body.account fieldset:invalid p {
   display:none;
 }
-input:invalid {
+body.account input:invalid {
   border-color: rgba(255,0,0,.45);
 }
-input:valid {
+body.account input:valid {
   border-color:green;
 } 
-input:focus {
+body.account input:focus {
   transform: scale(1.01, 1.01);
 }
-form:valid button {
+body.account form:valid button {
   opacity:1
 }
-form:invalid button {
+boddy.account form:invalid button {
   opacity: 0;  
 }
 
