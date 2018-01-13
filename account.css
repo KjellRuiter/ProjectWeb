@@ -192,9 +192,6 @@ License: none (public domain)
     /* ********************eigen code********************* */
     
     body {
-        width: 100%;
-        justify-content: center;
-        margin: 0 auto;
         background-image: url(images/Backgroundimg.jpg);
         background-size: cover;
         background-repeat: no-repeat;

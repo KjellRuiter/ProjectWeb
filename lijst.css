@@ -257,6 +257,7 @@ main > section {
     body {
         background-image: url(images/Backgroundimg.jpg);
         background-size: cover;
+        background-repeat: no-repeat;
     }
     
     article {
