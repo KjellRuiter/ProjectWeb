@@ -246,18 +246,7 @@ License: none (public domain)
         text-decoration: underline;
         text-decoration-style: solid;
     }
-    /* ******************** footer ********************* */
     
-    body > footer > ul > li {
-        font-family: "transico";
-        display: inline-block;
-        font-size: 1.5em;
-    }
-    
-    body > footer > ul {
-        float: right;
-        padding-right: .5em;
-    }
     /* ******************** form ********************* */
     
     main > form {
@@ -311,6 +300,30 @@ input {
         border-radius: 1.25em;
         color: white;
     }
+
+fieldset:invalid p {
+  display:none;
+}
+input:invalid {
+  border-color: rgba(255,0,0,.45);
+}
+input:valid {
+  border-color:green;
+} 
+input:focus {
+  transform: scale(1.01, 1.01);
+}
+form:valid button {
+  opacity:1
+}
+form:invalid button {
+  opacity: 0;  
+}
+button:focus {
+  transform: scale(1.1, 1.1);
+}
+
+
     
     button:hover {
         transform: scale(1.1);

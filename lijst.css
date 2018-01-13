@@ -247,9 +247,102 @@ License: none (public domain)
 text-decoration: underline;
        text-decoration-style: solid;
 }
+main > section {
+        margin: auto;
+        display: block;
+        position: relative;
+        padding: 3em;
+    }
+    
+    body {
+        background-image: url(images/Backgroundimg.jpg);
+        background-size: cover;
+    }
+    
+    article {
+        position: relative;
+        text-align: left;
+        display: inline-block;
+        border-radius: 0.4em;
+        background-color: #fff;
+        vertical-align: top;
+        padding: .5em;
+        padding-bottom: 3em;
+    }
+    
+    article:hover {
+        transform: scale(1.1);
+    }
+    
+    main {
+        position: relative;
+        display: block;
+    }
+    
+    main article img {
+        width: 100%;
+        height: 0 auto;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #00D66C;
+    }
+   section article ul li {
+        display: inline-block;
+        margin
+    }
+    
+    section article ul {
+        margin-top: .5em;
+        margin-bottom: .2em;
+    }
+    
+    main section article section {
+        position: absolute;
+        bottom: .5em;
+    }
+
+    button {
+        background-color: #ff3268;
+        box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+        margin: .2em;
+        padding: .4375em 1.5em .5625em;
+        position: relative;
+        border: 0;
+        font-weight: bold;
+        line-height: 1.5;
+        cursor: pointer;
+        display: inline-block;
+        text-decoration: none;
+        border-radius: 1.25em;
+        color: white;
+    }
+
+/* ******************** grid en flow ********************* */
+    
+    main > section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 3em;
+        grid-row-gap: 3em;
+        justify-content: center;
+    }
+    /* ******************** 1e brake ********************* */
+    
+    @media only screen and (max-width: 64em) {
+       main > section {
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+        }
+    }
     /* ******************** 2e brake ********************* */
     
     @media only screen and (max-width: 44em) {
+        main > section {
+            grid-template-columns: 1fr;
+            justify-content: center;
+        }
         header h1 {
             margin: auto;
             font-size: 2em;
@@ -265,6 +358,10 @@ text-decoration: underline;
     /* ******************** 3e brake ********************* */
     
     @media only screen and (max-width: 25em) {
+        main > section {
+            grid-template-columns: 1fr;
+            justify-content: center;
+        }
         header h1 {
             margin: auto;
             font-size: 1.9em;
@@ -285,10 +382,9 @@ text-decoration: underline;
             justify-content: flex-end;
         }
     }
-/* ******************** 3e brake ********************* */
 
-
-
+/* ******************** footer ********************* */
+    
 
 
 
