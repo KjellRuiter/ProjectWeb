@@ -6,6 +6,7 @@
     <title>Overzichtspagina</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -38,8 +39,14 @@
                 </footer>
                 <img src="images/Neerslachtig.jpg" alt="neerslachtig foto">
                 <section>
-                    <button>Opslaan</button>
-                    <button>download</button>
+                    <button class="add">
+                        <i>&#xe64F;</i>
+                        <i>&#xe64E;</i>
+                    </button>
+                    <button class="download">
+                        <i>&#xe651;</i>
+                        <i>&#xe609;</i>
+                    </button>
                 </section>
             </article>
 
@@ -80,12 +87,13 @@
 
         <section>
             <form>
+               <button class="filter_button" type="button"><i class="fa fa-filter" aria-hidden="true"></i></button>
                 <input type="text" placeholder="Zoeken">
-                <button id="filtersortbtn">zoek</button>
+                <button id="filtersortbtn" type="button">zoek</button>
             </form>
         </section>
 
-        <form>
+        <form class="filters">
 
             <h3>Wat zoek je?</h3>
             <div>
@@ -291,6 +299,7 @@
     </main>
 
     <footer>
+       <script type="application/javascript" src="/script.js"></script>
         <button>
             <a href="#top"><img src="images/arrow%20next.png" alt="back tot top button"></a>
         </button>
