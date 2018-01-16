@@ -714,7 +714,7 @@ boddy.account form:invalid button {
     padding: 1em;
     font-size: 1em;
     font-family: "Nexa Light";
-    line-height: 1.2em;
+    line-height: 1.5em;
 }
 
 .neerslachtig p:hover {
@@ -769,7 +769,7 @@ boddy.account form:invalid button {
 @media only screen and (max-width: 37.5em) {
     .neerslachtig p {
         width: 19em;
-        line-height: 1.2em;
+        line-height: 1.5em;
         color: black;
     }
 }
@@ -782,13 +782,14 @@ boddy.account form:invalid button {
 }
 
 .iphone p {
-    width: 35em;
+    width: 25em;
     margin: auto;
     padding: 1em;
     font-size: 1em;
     font-family: "Nexa Light";
-    line-height: 1.8em;
+    line-height: 1.2em;
 }
+
 .iphone p {
     border-radius: 1em;
     background-color: white;
@@ -802,7 +803,8 @@ boddy.account form:invalid button {
     background-position: bottom;
     background-repeat: no-repeat;
     padding-bottom: 2.7em;
-} 
+}
+
 .readbar {
     position: fixed;
     width: 100%;
@@ -847,7 +849,6 @@ boddy.account form:invalid button {
 }
 
 
-
 /* ******************** verhaal verliefd ********************* */
 
 .verliefd {
@@ -858,10 +859,22 @@ boddy.account form:invalid button {
 .verliefd p {
     width: 30em;
     margin: auto;
+    margin-top: 2.78999em;
     padding: 1em;
     font-size: 1em;
-    line-height: 1.7em;
+    line-height: 3em;
     font-family: "Nexa Light";
+}
+
+.verliefd p:hover {
+    color: red;
+    transform: translate(0em) scale(1.1);
+    transition: transform 0.5s;
+}
+
+.verliefd section {
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
 
 .readbar {
@@ -901,7 +914,8 @@ boddy.account form:invalid button {
 
 @media only screen and (max-width: 37.5em) {
     .verliefd p {
-        width: 19em;
-        line-height: 1.2em;
+        width: 80%;
+        line-height: 3em;
+        padding: 5em;
     }
 }
