@@ -1,3 +1,6 @@
+//Bron : Thijs Bouwes
+
+
 var add_button = document.querySelector(".add");
 var download_button = document.querySelector(".download");
 var readbar = document.querySelector(".readbar span");
