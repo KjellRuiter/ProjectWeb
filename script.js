@@ -1,6 +1,6 @@
 //Bron : Thijs Bouwes
 
-
+//hier wroden de var aangemaakt. 
 var add_button = document.querySelector(".add");
 var download_button = document.querySelector(".download");
 var readbar = document.querySelector(".readbar span");
@@ -9,6 +9,8 @@ var filter_button = document.querySelector(".filter_button");
 
 var scrolled = 0;
 var total_height = 0;
+
+//opslaanbutton en download button.  als opslaan button actief is kun je de download button zien en als hij niet actief is staat de download buton op hidden. 
 
 if (add_button) {
    add_button.addEventListener('click', showDownload); 
@@ -27,7 +29,7 @@ function showDownload () {
 function veranderDownload () {
     download_button.classList.toggle("process");
 }
-
+// readbar 
 if (readbar) {
     window.addEventListener("scroll", function(e){
         // determine direction
@@ -55,6 +57,7 @@ if (readbar) {
     
 }
 
+//fitrebutton click event met toggle waardoor je hem in en uitklap.
 if (filter_button) {
     filter_button.addEventListener ('click', showFilter);
 }
