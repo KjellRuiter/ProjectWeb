@@ -859,22 +859,21 @@ boddy.account form:invalid button {
 .verliefd p {
     width: 30em;
     margin: auto;
-    margin-top: 2.78999em;
+    margin-top: 3em;
     padding: 1em;
     font-size: 1em;
-    line-height: 3em;
+    line-height: 3.5em;
     font-family: "Nexa Light";
 }
 
 .verliefd p:hover {
-    color: red;
     transform: translate(0em) scale(1.1);
     transition: transform 0.5s;
 }
 
 .verliefd section {
-    padding-top: 5em;
-    padding-bottom: 5em;
+    padding-top: 6em;
+    padding-bottom: 6em;
 }
 
 .readbar {
