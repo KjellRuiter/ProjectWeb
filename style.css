@@ -484,6 +484,8 @@ main > section > form >input {
     border-radius: 1em;
     border-color: #2800a0;
     padding: 0.7em;
+    font-family:"nexa light";
+    font-size: 0.8em;
     width: 120px;
     -webkit-transition: width .40s ease-in-out;
     transition: width .40s ease-in-out;
