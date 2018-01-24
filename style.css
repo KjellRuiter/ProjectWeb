@@ -509,13 +509,13 @@ main > form button {
     height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: opacity 1.5s;
 }
 
 .filters.active {
     opacity: 1;
     height: auto;
     display: block;
+    transition: opacity 3.5s;
 }
 
 form h3 {
@@ -922,27 +922,35 @@ boddy.account form:invalid button {
 }
 
 #snackbar {
-    visibility: hidden;
-    min-width: 250px;
-    margin-left: -125px;
+    opacity: 0;
+    min-width: 15.6em;
+    margin-left: -11em;
     background-color: #2800a0;
     color: #fff;
     text-align: center;
     font-family: "nexa bold";
     border-radius: 1em;
-    padding: 16px;
+    padding: 1em;
     position: fixed;
     z-index: 1;
     left: 50%;
-    bottom: 30px;
-    font-size: 17px;
+    bottom: 1.87em;
+    font-size: 1em;
+    transform-origin: bottom;
+    transform: scale(0.5);
+    transition: all 600ms cubic-bezier(0, 0.99, 1, 2.99);
 }
 
 #snackbar.show {
-    visibility: visible;
-    -webkit-animation: easy-in-out;
+    opacity: 1;
+    transform: rotate(0deg);
+    
+}
+/*
+     -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
     animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
+
 @-webkit-keyframes fadein {
     from {bottom: 0; opacity: 0;} 
     to {bottom: 30px; opacity: 1;}
@@ -962,3 +970,5 @@ boddy.account form:invalid button {
     from {bottom: 30px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
 }
+*/
+

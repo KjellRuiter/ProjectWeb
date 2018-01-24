@@ -20,6 +20,19 @@ if (download_button) {
   download_button.addEventListener ('click',veranderDownload);  
 }
 
+/// functie voor de melding van snackbar
+
+if (add_button) {
+   add_button.addEventListener('click', myFunction); 
+}
+
+function myFunction() {
+    var x = document.getElementById("snackbar")
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+
+//////
 
 function showDownload () {
     add_button.classList.toggle("active");
@@ -66,8 +79,3 @@ function showFilter() {
     document.querySelector(".filters").classList.toggle("active");
 }
 
-function myFunction() {
-    var x = document.getElementById("snackbar")
-    x.className = "show";
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-}
