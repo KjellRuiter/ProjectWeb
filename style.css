@@ -167,6 +167,11 @@ table {
     src: url(../fonts/January.ttf);
 }
 
+@font-face {
+    font-family: "CURE";
+    src: url(../fonts/CURE.ttf);
+}
+
 h1,
 h2,
 h3,
@@ -789,10 +794,6 @@ boddy.account form:invalid button {
 
 /* ******************** verhaal iphone ********************* */
 
-.iphone {
-    background-image: url(images/backgrounnndndddndndnd.gif);
-}
-
 .iphone p {
     width: 25em;
     margin: auto;
@@ -802,19 +803,22 @@ boddy.account form:invalid button {
     line-height: 1.2em;
 }
 
-.iphone p {
-    border-radius: 1em;
-    background-color: white;
-    margin-bottom: 45em;
-    margin-top: 45em;
+.overley img {
+    position: fixed;
+    opacity: .71;
+    background-image: url(images/iphone%20background.jpg);
+    width: 100%;
+    top: -16em;
+    height: 100em;   
 }
 
-.iphone p:hover {
-    background-image: url(images/vinkjes.png);
-    background-size: 3.5em;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    padding-bottom: 2.7em;
+.iphone p {
+    margin-bottom: 45em;
+    color: darkblue;
+    margin-top: 45em;
+    line-height: 2.3em;
+    font-family: "CURE";
+    font-size: 1.5em;
 }
 
 .readbar {
@@ -855,8 +859,8 @@ boddy.account form:invalid button {
 @media only screen and (max-width: 37.5em) {
     .iphone p {
         width: 19em;
-        line-height: 1.2em;
-        color: black;
+        line-height: 2.3em;
+        color: darkblue;
     }
 }
 
