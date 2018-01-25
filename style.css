@@ -157,6 +157,16 @@ table {
     src: url(../fonts/transavicon.woff);
 }
 
+@font-face {
+    font-family: "Antler";
+    src: url(../fonts/Antler Caps.ttf);
+}
+
+@font-face {
+    font-family: "Janu";
+    src: url(../fonts/January.ttf);
+}
+
 h1,
 h2,
 h3,
@@ -853,9 +863,11 @@ boddy.account form:invalid button {
 
 /* ******************** verhaal verliefd ********************* */
 
+
+
 .verliefd {
-    background-color: lightcoral;
-    color: white;
+    background-image:url(images/verlieftback-1.jpg);
+    background-size: cover;;
 }
 
 .verliefd p {
@@ -865,7 +877,8 @@ boddy.account form:invalid button {
     padding: 1em;
     font-size: 1em;
     line-height: 3.5em;
-    font-family: "Nexa Light";
+    font-family: "Antler";
+    color: dimgray;
 }
 
 .verliefd p:hover {
@@ -943,32 +956,5 @@ boddy.account form:invalid button {
 
 #snackbar.show {
     opacity: 1;
-    transform: rotate(0deg);
-    
+    transform: rotate(0deg);  
 }
-/*
-     -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-    animation: fadein 0.5s, fadeout 0.5s 2.5s;
-}
-
-@-webkit-keyframes fadein {
-    from {bottom: 0; opacity: 0;} 
-    to {bottom: 30px; opacity: 1;}
-}
-
-@keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
-}
-
-@-webkit-keyframes fadeout {
-    from {bottom: 30px; opacity: 1;} 
-    to {bottom: 0; opacity: 0;}
-}
-
-@keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
-}
-*/
-
